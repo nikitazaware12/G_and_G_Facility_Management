@@ -1,0 +1,17 @@
+html{scroll-behavior:smooth}body{animation:pg .7s}@keyframes pg{from{opacity:0;transform:translateY(14px)}to{opacity:1}}
+.reveal{opacity:0;transform:translateY(40px);transition:all .9s cubic-bezier(.2,.8,.2,1)}.reveal.in{opacity:1;transform:none}
+.card3{position:relative;overflow:hidden;border-radius:1.25rem;background:#fff;padding:1.25rem;box-shadow:0 10px 30px rgba(18,48,92,.1);border:1px solid #e5edf5;transition:transform .4s,box-shadow .4s}
+.card3::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#12305c,#2aa7b0);opacity:0;transition:opacity .4s}
+.card3::after{content:"";position:absolute;left:0;bottom:0;height:5px;width:0;background:#f5a02e;transition:width .5s}
+.card3>*{position:relative;z-index:1}.card3 h3,.card3 p,.card3 li{transition:color .4s}
+.card3:hover{transform:translateY(-12px) rotate(-.6deg);box-shadow:0 22px 45px rgba(18,48,92,.28)}
+.card3:not(.flat):hover::before{opacity:1}.card3:hover::after{width:100%}.card3:not(.flat):hover :is(h3,p,li,b,span,small,a:not(.btn)){color:#fff!important}
+.card3 .ico{transition:transform .6s}.card3:hover .ico{transform:rotateY(360deg) scale(1.1)}
+.blob{position:absolute;border-radius:50%;opacity:.25;animation:fl 8s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-30px) rotate(20deg)}}
+.spin{animation:sp 25s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}
+.pulse2{animation:pu 3s infinite}@keyframes pu{50%{transform:scale(1.07)}}
+.mq{overflow:hidden}.mq>div{display:flex;gap:16px;width:max-content;animation:mq 25s linear infinite}@keyframes mq{to{transform:translateX(-50%)}}
+.btn{display:inline-block;padding:.8rem 1.8rem;border-radius:999px;font-weight:700;transition:.3s}.btn:hover{transform:translateY(-4px) scale(1.04)}
+.inp{width:100%;padding:.8rem 1rem;border:2px solid #e2e8f0;border-radius:.75rem;margin-bottom:.9rem;transition:.3s;background:#f8fafc}.inp:focus{outline:0;border-color:#2aa7b0;box-shadow:0 0 0 4px rgba(42,167,176,.2)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.flat::before{display:none}.flat{transition:transform .4s,box-shadow .4s,background-color .4s,border-color .4s}.flat:hover{transform:translateY(-8px) rotate(-.4deg)!important;background-color:#e9f7f8;border-color:#2aa7b0;box-shadow:0 18px 40px rgba(42,167,176,.28)}.ico{color:#12305c}.ico svg{width:1.5rem;height:1.5rem}.card3:not(.flat):hover .ico{background:#fff!important}
