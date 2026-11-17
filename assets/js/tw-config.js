@@ -1,1 +1,1 @@
-tailwind.config={theme:{extend:{colors:{navy:'#12305c',teal:'#2aa7b0',orange:{DEFAULT:'#f5a02e',500:'#f5a02e',600:'#ff7e2e'}}}}};
+tailwind.config={theme:{extend:{fontFamily:{sans:['Figtree','system-ui','sans-serif'],display:['Bricolage Grotesque','Figtree','sans-serif']},colors:{navy:'#0a2a4d',teal:'#12b5b0',orange:{DEFAULT:'#ffb627',500:'#ffb627',600:'#ff8a1f'}}}}};
